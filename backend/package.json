@@ -1,0 +1,26 @@
+{
+  "name": "lanchonete",
+  "version": "1.0.0",
+  "description": "Criar um sistema para adicionar lanches/realizar pedidos. Esse mini projeto visa o estudo e desenvolvimento da stack React/Node/React Native",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeNicolettiRMario/Lanchonete.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeNicolettiRMario/Lanchonete/issues"
+  },
+  "homepage": "https://github.com/FelipeNicolettiRMario/Lanchonete#readme"
+}
