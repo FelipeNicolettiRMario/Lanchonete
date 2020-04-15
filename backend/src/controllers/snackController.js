@@ -32,4 +32,28 @@ function insert(req,res){
     })
 }
 
-module.exports = {index,insert}
+
+function selectOne(req,res){
+
+    const {searchParam} = req.body
+
+    
+        queryString = `SELECT * FROM Lanchonete.LNC_LANCHE where LNC_ID = ${parseInt(searchParam)}`
+
+        if(isNaN(parseInt(searchParam)))
+        {
+            queryString = `SELECT * FROM Lanchonete.LNC_LANCHE where LNC_NOME = '${searchParam}'`
+        }
+ 
+    conn.query(queryString,function(err, rows, fields) {
+        if(!err){
+            return res.json({result:rows})
+        }
+        else{
+            console.log(err)
+        }
+        
+    })
+}
+
+module.exports = {index,insert,selectOne}

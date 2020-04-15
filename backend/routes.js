@@ -4,6 +4,7 @@ const snack  = require('./src/controllers/snackController')
 const routes = Router()
 
 routes.get("/snacks",snack.index)
-routes.post("/snacks",snack.insert)
+routes.post("/snack",snack.insert)
+routes.get("/snack",snack.selectOne)
 
 module.exports = routes
